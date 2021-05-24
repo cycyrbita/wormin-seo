@@ -8,6 +8,11 @@
     &_face {
         background-color: #F2F2E8;
     }
+
+    &_sostav {
+        background-image: url("../media/section/sostav.jpg");
+        background-position: center;
+    }
 }
 
 .section__title {
@@ -23,6 +28,12 @@
     .section {
         padding-top: 40px;
         padding-bottom: 40px;
+
+        &_sostav {
+            padding-bottom: 600px;
+            background-image: url("../media/section/sostav-1024.jpg");
+            background-position: center bottom;
+        }
     }
 
     .section__title {
@@ -34,6 +45,12 @@
     .section {
         padding-top: 30px;
         padding-bottom: 30px;
+
+        &_sostav {
+            padding-bottom: 390px;
+            background-image: url("../media/section/sostav-768.jpg");
+            background-position: center bottom;
+        }
     }
 
     .section__title {
