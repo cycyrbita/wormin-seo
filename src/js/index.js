@@ -1,8 +1,9 @@
 
 $(document).ready(function () {
-    $('.js-open-menu').click(function() {
-        $('.header').toggleClass('mobile');
+    $('.nav__burger').click(function() {
+        $('.nav__list_header').toggleClass('active');
         $('body, html').toggleClass('overflow');
+        $('.nav__burger').toggleClass('active');
     })
 
     $('.message__body').owlCarousel({
