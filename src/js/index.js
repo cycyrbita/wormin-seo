@@ -45,4 +45,24 @@ $(document).ready(function () {
             $('.callback__field').val('');
         }
     })
+
+    $('.footer__modal-item').click(function() {
+        var $index = $(this).index();
+        $('.footer-modal').removeClass('active');
+        $('.footer-modal').eq($index).addClass('active');
+        $('body, html').addClass('overflow');
+    })
+
+    $('.footer-modal__close').click(function() {
+        $('.footer-modal').removeClass('active');
+        $('body, html').removeClass('overflow');
+    })
+
+    $(document).mouseup(function(e) {
+		var div = $('.footer-modal__body');
+		if (!div.is(e.target) && div.has(e.target).length === 0) {
+			$('.footer-modal').removeClass('active');
+            $('body, html').removeClass('overflow');
+		}
+	});
 });

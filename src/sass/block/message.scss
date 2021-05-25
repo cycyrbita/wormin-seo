@@ -172,6 +172,10 @@
     }
 }
 
+.message__btn {
+    text-align: center;
+}
+
 @media (max-width: 480px) {
     .message__item {
         padding: 75px 15px 15px;
@@ -179,8 +183,8 @@
     }
 
     .message__description {
-        margin-bottom: 0;
         font-size: 16px;
+        text-align: center;
     }
 
     .message__box .owl-dots {
@@ -218,5 +222,9 @@
         max-width: 35px;
         margin-right: auto;
         margin-left: auto;
+    }
+
+    .message__icon {
+        justify-content: center;
     }
 }

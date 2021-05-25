@@ -78,6 +78,16 @@
     }
 }
 
+.face__price {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 800;
+
+    mark {
+        color: #39B992;
+    }
+}
+
 @media (max-width: 1024px) {
     .face__btn {
         padding: 15px 30px;
@@ -127,6 +137,11 @@
     .face__btn {
         margin-right: auto;
         margin-left: auto;
+    }
+
+    .face__price {
+        width: 100%;
+        text-align: center;
     }
 }
 
