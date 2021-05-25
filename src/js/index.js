@@ -6,19 +6,27 @@ $(document).ready(function () {
         $('.nav__burger').toggleClass('active');
     })
 
-    $('.message__body').owlCarousel({
+    $('.js-message__box').owlCarousel({
         loop: true,
         autoHeight: true,
-        items: 1,
         nav: true,
         responsive: {
             0 : {
-                stagePadding: 0,
+                stagePadding: 5,
+                items: 1,
                 margin: 15
             },
-            600 : {
-                stagePadding: 50,
-                margin: 55
+
+            768 : {
+                items: 2,
+                stagePadding: 5,
+                margin: 15
+            },
+
+            1024 : {
+                items: 3,
+                stagePadding: 5,
+                margin: 15
             }
         }
     });
