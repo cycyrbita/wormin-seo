@@ -31,6 +31,16 @@
     &_warning {
         background-color: #7E983C;
     }
+
+    &_courier {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        background-color: #F0F0F0;
+        background-image: url("../media/courier/human.jpg");
+        background-repeat: no-repeat;
+        background-position: calc(50% - 210px) top;
+        background-size: contain;
+    }
 }
 
 .section__title {
@@ -52,6 +62,11 @@
             background-image: url("../media/section/sostav-1024.jpg");
             background-position: center bottom;
         }
+
+        &_courier {
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
     }
 
     .section__title {
@@ -69,6 +84,11 @@
             background-image: url("../media/section/sostav-768.jpg");
             background-position: center bottom;
         }
+
+        &_courier {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
     }
 
     .section__title {
@@ -78,7 +98,11 @@
 
 @media (max-width: 480px) {
     .section {
-
+        &_courier {
+            padding-bottom: 300px;
+            background-position: center bottom;
+            background-size: 180px;
+        }
     }
 
     .section__title {
