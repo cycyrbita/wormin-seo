@@ -222,11 +222,11 @@ html [type="button"],
 	appearance: button;
 }
 
-@media (max-width: 768px) {
-	.overflow {
-		overflow: hidden;
-	}
+.overflow {
+	overflow: hidden;
+}
 
+@media (max-width: 768px) {
 	.page {
 		padding-top: 63px;
 	}
