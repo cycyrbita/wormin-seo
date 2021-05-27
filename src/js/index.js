@@ -30,18 +30,18 @@ $(document).ready(function () {
         }
     });
 
-    $('.callback__btn').click(function(e) {
+    $('.form__btn').click(function(e) {
         e.preventDefault();
-        $('.callback__form').find('.callback__field').each(function () {
+        $('.form').find('.form__field').each(function () {
             if ($(this).val() != '') {
-                $(this).removeClass('callback__field_empty');
+                $(this).removeClass('form__field_empty');
             } else {
-                $(this).addClass('callback__field_empty');
+                $(this).addClass('form__field_empty');
             }
         });
 
-        if(!$('.callback__field').hasClass('callback__field_empty')) {
-            $('.callback__field').val('');
+        if(!$('.form__field').hasClass('form__field_empty')) {
+            $('.form__field').val('');
         }
     })
 
